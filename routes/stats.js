@@ -175,7 +175,9 @@ router.get('/', async (req, res) => {
 </svg>`;
 
     res.set('Content-Type', 'image/svg+xml');
-    res.set('Cache-Control', 'public, max-age=1800');
+    res.set('Cache-Control', 'no-cache, no-store, must-revalidate');
+    res.set('Pragma', 'no-cache');
+    res.set('Expires', '0');
     res.send(svg);
   } catch (err) {
     console.error('stats error:', err);
