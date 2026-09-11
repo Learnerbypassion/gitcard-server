@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="360" viewBox="0 0 850 360" role="img">
+  <title>Soham Bhattacharya Profile Brief</title>
+  <defs>
+    <linearGradient id="heroBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#10b981" stop-opacity="0.75"/>
+      <stop offset="70%" stop-color="#8b5cf6" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.8"/>
+    </linearGradient>
+    <radialGradient id="heroTopGlow" cx="30%" cy="0%" r="55%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.18"/>
+      <stop offset="50%" stop-color="#10b981" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#070913" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="heroBottomGlow" cx="70%" cy="100%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#070913" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="heroRoamingOrb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="40%" stop-color="#818cf8" stop-opacity="0.16"/>
+      <stop offset="75%" stop-color="#c084fc" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#070913" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="heroAsciiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="heroInnerBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="heroScan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer background & glowing border -->
+  <rect x="1" y="1" width="848" height="358" rx="22" fill="#070913" stroke="url(#heroBorder)" stroke-width="1.5"/>
+
+  <!-- Ambient auras -->
+  <rect x="1" y="1" width="848" height="358" rx="22" fill="url(#heroTopGlow)" pointer-events="none"/>
+  <rect x="1" y="1" width="848" height="358" rx="22" fill="url(#heroBottomGlow)" pointer-events="none"/>
+
+  <!-- Animated roaming glowing orb -->
+  <circle cx="240" cy="120" r="140" fill="url(#heroRoamingOrb)" pointer-events="none">
+    <animate attributeName="cx" values="200;640;400;200" dur="16s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="120;160;270;120" dur="16s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Inner container box -->
+  <rect x="34" y="28" width="782" height="304" rx="16" fill="rgba(8, 12, 20, 0.65)" stroke="url(#heroInnerBorder)" stroke-width="1.2"/>
+
+  <!-- LEFT HERO COLUMN -->
+  <!-- Recruiter brief pill badge -->
+  <rect x="60" y="54" width="270" height="24" rx="6" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="0.8"/>
+  <circle cx="73" cy="66" r="3.5" fill="#10b981">
+    <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="84" y="70" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" font-weight="700" fill="#38bdf8" letter-spacing="0.5">RECRUITER SIGNAL BRIEF · learnerbypassion</text>
+
+  <!-- Candidate Name -->
+  <text x="60" y="116" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="800" fill="#ffffff" letter-spacing="-0.5">Soham Bhattacharya</text>
+
+  <!-- Role / Headline -->
+  <text x="60" y="148" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#38bdf8">Frontend or full-stack engineer</text>
+
+  <!-- Bio / Tagline -->
+  <text x="60" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="500" fill="#94a3b8">Building useful software and sharing the work in public.</text>
+
+  <!-- Status pill -->
+  <rect x="60" y="206" width="258" height="28" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="76" cy="220" r="4" fill="#22c55e">
+    <animate attributeName="r" values="3.5;4.5;3.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="88" y="224" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">Building and sharing work in public</text>
+
+  <!-- Skill chips -->
+  <g transform="translate(60, 252)">
+    <rect x="0" y="0" width="82" height="22" rx="5" fill="rgba(56, 189, 248, 0.1)" stroke="rgba(56, 189, 248, 0.25)" stroke-width="0.8"/>
+    <text x="41" y="15" font-family="sans-serif" font-size="11" font-weight="600" fill="#38bdf8" text-anchor="middle">JavaScript</text>
+
+    <rect x="90" y="0" width="58" height="22" rx="5" fill="rgba(45, 212, 191, 0.1)" stroke="rgba(45, 212, 191, 0.25)" stroke-width="0.8"/>
+    <text x="119" y="15" font-family="sans-serif" font-size="11" font-weight="600" fill="#2dd4bf" text-anchor="middle">React</text>
+
+    <rect x="156" y="0" width="76" height="22" rx="5" fill="rgba(192, 132, 252, 0.1)" stroke="rgba(192, 132, 252, 0.25)" stroke-width="0.8"/>
+    <text x="194" y="15" font-family="sans-serif" font-size="11" font-weight="600" fill="#c084fc" text-anchor="middle">HTML / CSS</text>
+
+    <rect x="240" y="0" width="68" height="22" rx="5" fill="rgba(74, 222, 128, 0.1)" stroke="rgba(74, 222, 128, 0.25)" stroke-width="0.8"/>
+    <text x="274" y="15" font-family="sans-serif" font-size="11" font-weight="600" fill="#4ade80" text-anchor="middle">Node.js</text>
+  </g>
+
+  <!-- RIGHT TERMINAL COLUMN (ANIMATED ASCII PORTRAIT) -->
+  <g>
+    <!-- Terminal window box -->
+    <rect x="520" y="48" width="276" height="264" rx="12" fill="#060913" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.2"/>
+
+    <!-- Mac-style window controls -->
+    <circle cx="536" cy="64" r="4" fill="#ff5f56"/>
+    <circle cx="548" cy="64" r="4" fill="#ffbd2e"/>
+    <circle cx="560" cy="64" r="4" fill="#27c93f"/>
+    <text x="574" y="67.5" font-family="ui-monospace, monospace" font-size="10" fill="#64748b">learnerbypassion@avatar:~# <tspan fill="#38bdf8"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>_</tspan></text>
+    <line x1="520" y1="76" x2="796" y2="76" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Animated ASCII grid -->
+    <g>
+      <animate attributeName="opacity" values="0.88;1;0.88" dur="3s" repeatCount="indefinite"/>
+      <text x="536" y="86" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">wwwmmmmmZZZOz00000O00Q000QQLLLLCJCUCCCCL</text><text x="536" y="97" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">wwwwmwmmmmZZz0OQv\)(j\(\cLLLLLLCJCUCCLCC</text><text x="536" y="108" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">wwwwwwwmmmmmYZXlI+_][]ii+}zQLLLCJCJCCLCC</text><text x="536" y="119" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">wwwwwwwmmmmmUYi{xnxuunt?I~]QLQLLJJJCLCCC</text><text x="536" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">wwwwwwwmmwmmJJrnxvcu/)\ff]/QQLLLCJJCLCCC</text><text x="536" y="141" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">wwwwwwwmmwmwC0/}[|nt)[}tcftJQLLLJJJJCCCC</text><text x="536" y="152" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">wwwwwmmmmwwwJ0LXfzYjjzYJYn(CQLLCCUJJJCCJ</text><text x="536" y="163" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">wwwwmmmmmmmwJu/{?}}{{(xxj[vLLLCCJYJJJJJC</text><text x="536" y="174" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">wwwwmmmmmmmmJ\?-tf)f\-[-?tLLCCCCJYUJUJJJ</text><text x="536" y="185" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">wwwwmmmZZZZmUO\i[{[?il!-|LLLCCCCJYUUUJJJ</text><text x="536" y="196" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">wwwmmmmZZZZmZbpj]~~~~-|vQZqqwZm0CXUYUUUU</text><text x="536" y="207" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">wwwmmZZZwdhaabwCr))/nULZZwqqwqddbpw0CUYU</text><text x="536" y="218" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">wwwmZZwdhhhhYt\\|1||z0Z0Zwwbkkkhhkwpdd0m</text><text x="536" y="229" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">wwwmZwqqdhkhj]??(!I-vQQmppkkkhpmbZwwpkwQ</text><text x="536" y="240" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">wwmZmqwqqkkkf?[[?ii-XpdkdbdkkqCm0Qqbbmmm</text><text x="536" y="251" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">wwmZwwwwqbkkUf{]){?-Ukkbddqpq0C0LpbwZwdk</text><text x="536" y="262" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">wwmOwpqqqbkdnvZLX(??UbdppppmZ0Q0qmZqdkkb</text><text x="536" y="273" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">wmmCUwpqqbbdr+-jLwZuCqwwpdpwZmCwbbdqqdbp</text><text x="536" y="284" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">mmwqX0wqqdqLQOOYuX0QQmdqqppqmmYwZ0mdbbpZ</text><text x="536" y="295" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="url(#heroAsciiGrad)" xml:space="preserve">ZZQvvYqqqppUj)txXLOzvYC0ZmwqwwZmpdddqmOC</text>
+    </g>
+
+    <!-- CRT scanline beam -->
+    <rect x="526" y="78" width="264" height="24" fill="url(#heroScan)" pointer-events="none">
+      <animate attributeName="y" values="78;282;78" dur="4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

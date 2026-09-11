@@ -4,6 +4,7 @@ const portraitRoute = require('./routes/portrait');
 const statsRoute = require('./routes/stats');
 const projectsRoute = require('./routes/projects');
 const languagesRoute = require('./routes/languages');
+const heroRoute = require('./routes/hero');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -19,17 +20,20 @@ app.get('/', (req, res) => {
       'gitcard-server is running.',
       '',
       'Endpoints:',
-      '  GET /api/section/portrait?username=<user>&theme=<github-dark|light|aurora|cyber>',
+      '  GET /api/section/hero?username=<user>&theme=<github-dark|light|aurora|cyber>',
+      '  GET /api/section/portrait?username=<user>&theme=<...>',
       '  GET /api/section/stats?username=<user>&theme=<...>',
       '  GET /api/section/projects?username=<user>&theme=<...>&repos=owner/repo,owner/repo2',
       '  GET /api/section/languages?username=<user>&theme=<...>',
       '',
       'Embed in a README like:',
-      '  ![Stats](https://YOUR-APP.onrender.com/api/section/stats?username=octocat&theme=github-dark)'
+      '  ![Hero](https://YOUR-APP.onrender.com/api/section/hero?username=learnerbypassion&theme=github-dark)'
     ].join('\n')
   );
 });
 
+app.use('/api/section/hero', heroRoute);
+app.use('/api/section/brief', heroRoute);
 app.use('/api/section/portrait', portraitRoute);
 app.use('/api/section/stats', statsRoute);
 app.use('/api/section/projects', projectsRoute);

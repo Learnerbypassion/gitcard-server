@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="364" height="398" viewBox="0 0 364 398" role="img">
+  <title>Soham Bhattacharya animated ASCII portrait</title>
+  <defs>
+    <linearGradient id="portBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#10b981" stop-opacity="0.75"/>
+      <stop offset="70%" stop-color="#8b5cf6" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="asciiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <radialGradient id="portOrb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#10b981" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#070913" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="scanBeam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer terminal window -->
+  <rect x="1" y="1" width="362" height="396" rx="16" fill="#070913" stroke="url(#portBorder)" stroke-width="1.5"/>
+
+  <!-- Roaming background orb -->
+  <circle cx="182" cy="199" r="110" fill="url(#portOrb)" pointer-events="none">
+    <animate attributeName="cx" values="109.2;254.79999999999998;145.6;109.2" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="119.39999999999999;258.7;159.20000000000002;119.39999999999999" dur="12s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Terminal top bar -->
+  <circle cx="22" cy="24" r="4.5" fill="#ff5f56"/>
+  <circle cx="36" cy="24" r="4.5" fill="#ffbd2e"/>
+  <circle cx="50" cy="24" r="4.5" fill="#27c93f"/>
+  <text x="66" y="28" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600" fill="#64748b">learnerbypassion@terminal:~# <tspan fill="#38bdf8">./portrait.sh</tspan><tspan fill="#38bdf8"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>_</tspan></text>
+  
+  <line x1="16" y1="38" x2="348" y2="38" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Animated ASCII Text with subtle breathing glow -->
+  <g>
+    <animate attributeName="opacity" values="0.88;1;0.88" dur="4s" repeatCount="indefinite"/>
+    <text x="22" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwwmmmmmmZZZOOvQ000000O000QQ00QQQLLLLLCJUCJCCCCCL</text><text x="22" y="63.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwwmmmwmmZmZZZv000O00UcuXXXzY0QQLLLLLLCJJCJCCCCCC</text><text x="22" y="75" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwwwwmwmmmmmZZc0OZc(+~[)\1[][\cLLLLLLLCJUCJCLLCCC</text><text x="22" y="86.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwwwwwwmmmmmmmzZOf:;+~[?[?+!!~?\LQLLLLCJULJCCLCCC</text><text x="22" y="98" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwwwwwwmmmmmmmzmf~~1\t\fjrt]l;+~xQLQLLLJUCJCCCCLC</text><text x="22" y="109.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwwwwwwwmmmwmmXO~[cUYXvzYvnr/+!!fQQQQLLCUCJCLCCCC</text><text x="22" y="121" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwwwwmwwwmmwmwYwxvj/rvun)]}(tu\_UQQLQLLCUCJCLCCCC</text><text x="22" y="132.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwwwwwwwmmwwmwUwv}?~}fr\{?-[\uc1rLQLLLCJUCJCCCCCC</text><text x="22" y="144" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwwwwmmmmmmwmwUZJXcunQUrjxxvUUz(fLLLLLCCJJJJJCCCJ</text><text x="22" y="155.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwwwmmmmmmmwwwUQJUn)fnt\/cXUUYv1nQLLLLCCUUUJJCJCJ</text><text x="22" y="167" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwwmmmmmmmmmwwCcf\1-[[]{{)fxnr1{CLLLCCCCJYUJJJJJC</text><text x="22" y="178.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwwwmmmmmmmmmwLt{]+}t(|t\[]1[]-vLLLCCCCJUYUJUJJJJ</text><text x="22" y="190" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwwwmmmmZmmmmmLJ?+-xz\\|1+~i+-nLLCCCCCCJUUYUUJJJJ</text><text x="22" y="201.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwwmmmmmZZZZZZCQQ)i+---+!lli?|LCLLCJCCCJUYYUUJJJJ</text><text x="22" y="213" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwwmmmmmZZZZZZ0mbZ\?!!i!!+?)nCQmpqqZOQCUUYYUUUUUU</text><text x="22" y="224.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwwmmZmZZOZmdkakkOx)[?-?}tzC0ZwqqqwmdkbpZLYYYYUUU</text><text x="22" y="236" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">qwwmmmZZZmdkaahhhqqmJjfxzJCLZZOwwwqqqpdbbbbdwZCYYC</text><text x="22" y="247.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwmmZZZwbhhhhhU|())11(|)vQZZQZwmqhhkkhhhhdZddbq0w</text><text x="22" y="259" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwmmZmqpqdhhkhn????}i,;-x00Q0wwpkkkhhbdkdOdqqdbOQ</text><text x="22" y="270.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwmZmqqwqqkkkhn[]]]/~!~-u00ZkbdbbkkkpQ0q00wqkkwmQ</text><text x="22" y="282" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwmZZwwwqqdkkkx_?{[?+i~-uqkbkdddbhhp0CqQLmdkdmmqw</text><text x="22" y="293.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwmZmwwwwqdkkkY(?][)(??-ckkkbddpwdpmY00COkbwZmwbk</text><text x="22" y="305" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwwmmwqqqwqbkkqLZZUf)[]--ckbbdddpwmmmXOJwbwOZmpkkb</text><text x="22" y="316.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wwmmLOppqqqdkkkr{vLZwU/]?zddpppdqpwZmQQppmwpbkkkkb</text><text x="22" y="328" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">wmmmUYmppwwdbbpn_I]nLwdZxXqwwqqdpqwmZQQqbkbpwwpbbp</text><text x="22" y="339.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">mmmpwXLwqwqbbmLwZLv|)rCqpqqdpwmqdpqmmOYqmZO0wbkdp0</text><text x="22" y="351" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">mmmw0YXZwqqddwQrucQZqZZJczLmwqpqppqwmLL0QOwkkbdpmZ</text><text x="22" y="362.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="url(#asciiGrad)" xml:space="preserve">ZZmYnuumpqqpdwXu)1\jnzQ0cuzYJQ0ZmmwwwwqpkbdppqmOQU</text>
+  </g>
+
+  <!-- CRT Scanline beam passing over the portrait -->
+  <rect x="22" y="42" width="320" height="32" fill="url(#scanBeam)" pointer-events="none">
+    <animate attributeName="y" values="40;358;40" dur="4.5s" repeatCount="indefinite"/>
+  </rect>
+</svg>
