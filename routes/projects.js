@@ -12,6 +12,20 @@ router.get('/', async (req, res) => {
 
   let repoNames = [];
 
+  const DEFAULT_REPOS = [
+    'Learnerbypassion/legal-guard-app',
+    'Learnerbypassion/SangeetListener',
+    'Learnerbypassion/education-platform',
+    'Learnerbypassion/image-management-app'
+  ];
+
+  const REPO_DESCS = {
+    'legal-guard-app': 'AI-powered legal advisory & document protection platform.',
+    'SangeetListener': 'Web music player & audio streaming application.',
+    'education-platform': 'Interactive online learning & course platform.',
+    'image-management-app': 'Full-stack image storage, optimization & gallery app.'
+  };
+
   if (reposParam) {
     repoNames = reposParam
       .split(',')
@@ -20,27 +34,9 @@ router.get('/', async (req, res) => {
       .slice(0, 4);
   }
 
-  // If no specific repos provided, pick from the user's public repos or use random/popular repos
-  if (repoNames.length === 0 && username) {
-    try {
-      const userRepos = await getAllRepos(username);
-      if (Array.isArray(userRepos) && userRepos.length > 0) {
-        // Sort by stars descending to pick best repos, or sample
-        const sorted = [...userRepos].sort((a, b) => (b.stargazers_count || 0) - (a.stargazers_count || 0));
-        repoNames = sorted.slice(0, 4).map((r) => r.full_name || `${username}/${r.name}`);
-      }
-    } catch (err) {
-      console.warn('Could not auto-fetch user repos for projects:', err.message);
-    }
-  }
-
-  // Fallback if still empty
+  // If no specific repos provided, use the user's 4 selected repos
   if (repoNames.length === 0) {
-    if (username) {
-      repoNames = [`${username}/project-alpha`, `${username}/dev-toolkit`, `${username}/web-app`, `${username}/api-service`];
-    } else {
-      repoNames = ['octocat/Spoon-Knife', 'octocat/Hello-World', 'octocat/octocat.github.io', 'octocat/hello-world'];
-    }
+    repoNames = DEFAULT_REPOS;
   }
 
   try {
@@ -51,11 +47,11 @@ router.get('/', async (req, res) => {
           const repoPart = parts[1] || parts[0];
           return {
             name: repoPart,
-            full_name: name.includes('/') ? name : `${username || 'user'}/${name}`,
-            description: 'A selected public repository.',
+            full_name: name.includes('/') ? name : `${username || 'Learnerbypassion'}/${name}`,
+            description: REPO_DESCS[repoPart] || 'A selected public repository.',
             language: 'JavaScript',
-            stargazers_count: 12,
-            forks_count: 3,
+            stargazers_count: 0,
+            forks_count: 0,
             updated_at: new Date().toISOString()
           };
         })
@@ -87,10 +83,10 @@ router.get('/', async (req, res) => {
         const cx = startX + col * (cardW + gapX);
         const cy = startY + row * (cardH + gapY);
 
-        const fullName = escapeXml(r.full_name || `${username || 'user'}/${r.name}`);
+        const fullName = escapeXml(r.full_name || `${username || 'Learnerbypassion'}/${r.name}`);
         const name = escapeXml(r.name);
-        const desc = truncate(escapeXml(r.description || 'A public repository on GitHub.'), 48);
-        const lang = escapeXml(r.language || 'Code');
+        const desc = truncate(escapeXml(r.description || REPO_DESCS[r.name] || 'A public repository on GitHub.'), 48);
+        const lang = escapeXml(r.language || 'JavaScript');
         const stars = r.stargazers_count || 0;
         const updated = formatTimeAgo(r.updated_at || r.pushed_at);
 

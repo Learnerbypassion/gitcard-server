@@ -76,20 +76,20 @@
       
       <!-- Mini path & status dot -->
       <circle cx="18" cy="22" r="3.5" fill="#10b981"/>
-      <text x="28" y="25.5" font-family="ui-monospace, monospace" font-size="11" fill="#64748b">Learnerbypassion/Legal-Guardian</text>
+      <text x="28" y="25.5" font-family="ui-monospace, monospace" font-size="11" fill="#64748b">Learnerbypassion/legal-guard-app</text>
 
       <!-- Repo title with terminal cursor -->
-      <text x="18" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Legal-Guardian<tspan fill="#38bdf8"> _</tspan></text>
+      <text x="18" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" fill="#ffffff">legal-guard-app<tspan fill="#38bdf8"> _</tspan></text>
 
       <!-- Description -->
-      <text x="18" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">https://legal-guardian.netlify.app</text>
+      <text x="18" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">AI-powered legal advisory &amp; document protec…</text>
 
       <!-- Language pill -->
       <rect x="18" y="91" width="86" height="19" rx="4" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.28)" stroke-width="0.8"/>
-      <text x="61" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="middle">JavaScript</text>
+      <text x="61" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="middle">TypeScript</text>
 
       <!-- Stars and updated -->
-      <text x="114" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">★ 4 · 1mo ago</text>
+      <text x="114" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">★ 0 · 1mo ago</text>
 
       <!-- Donut activity ring -->
       <g transform="translate(316, 62)">
@@ -97,9 +97,9 @@
         <circle cx="0" cy="0" r="22" fill="none" stroke="#f97316" stroke-width="4.5"
           stroke-linecap="round"
           stroke-dasharray="138.23007675795088"
-          stroke-dashoffset="5.529203070318033"
+          stroke-dashoffset="41.469023027385276"
           transform="rotate(-90)"/>
-        <text x="0" y="3.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">96%</text>
+        <text x="0" y="3.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">70%</text>
       </g>
     </g>
     <g class="repo-card" transform="translate(438, 88)">
@@ -107,20 +107,20 @@
       
       <!-- Mini path & status dot -->
       <circle cx="18" cy="22" r="3.5" fill="#10b981"/>
-      <text x="28" y="25.5" font-family="ui-monospace, monospace" font-size="11" fill="#64748b">Learnerbypassion/Employee-Management-System</text>
+      <text x="28" y="25.5" font-family="ui-monospace, monospace" font-size="11" fill="#64748b">Learnerbypassion/SangeetListener</text>
 
       <!-- Repo title with terminal cursor -->
-      <text x="18" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Employee-Management-System<tspan fill="#38bdf8"> _</tspan></text>
+      <text x="18" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" fill="#ffffff">SangeetListener<tspan fill="#38bdf8"> _</tspan></text>
 
       <!-- Description -->
-      <text x="18" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">This is a practice project. I made this while l…</text>
+      <text x="18" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">Web music player &amp; audio streaming applicat…</text>
 
       <!-- Language pill -->
       <rect x="18" y="91" width="86" height="19" rx="4" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.28)" stroke-width="0.8"/>
       <text x="61" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="middle">JavaScript</text>
 
       <!-- Stars and updated -->
-      <text x="114" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">★ 3 · 5mo ago</text>
+      <text x="114" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">★ 0 · 6mo ago</text>
 
       <!-- Donut activity ring -->
       <g transform="translate(316, 62)">
@@ -128,9 +128,9 @@
         <circle cx="0" cy="0" r="22" fill="none" stroke="#a855f7" stroke-width="4.5"
           stroke-linecap="round"
           stroke-dasharray="138.23007675795088"
-          stroke-dashoffset="31.792917654328704"
+          stroke-dashoffset="9.676105373056544"
           transform="rotate(-90)"/>
-        <text x="0" y="3.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">77%</text>
+        <text x="0" y="3.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">93%</text>
       </g>
     </g>
     <g class="repo-card" transform="translate(54, 228)">
@@ -138,20 +138,20 @@
       
       <!-- Mini path & status dot -->
       <circle cx="18" cy="22" r="3.5" fill="#10b981"/>
-      <text x="28" y="25.5" font-family="ui-monospace, monospace" font-size="11" fill="#64748b">Learnerbypassion/ai-interview</text>
+      <text x="28" y="25.5" font-family="ui-monospace, monospace" font-size="11" fill="#64748b">Learnerbypassion/education-platform</text>
 
       <!-- Repo title with terminal cursor -->
-      <text x="18" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" fill="#ffffff">ai-interview<tspan fill="#38bdf8"> _</tspan></text>
+      <text x="18" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" fill="#ffffff">education-platform<tspan fill="#38bdf8"> _</tspan></text>
 
       <!-- Description -->
-      <text x="18" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">A public repository on GitHub.</text>
+      <text x="18" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">Interactive online learning &amp; course platfo…</text>
 
       <!-- Language pill -->
       <rect x="18" y="91" width="86" height="19" rx="4" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.28)" stroke-width="0.8"/>
       <text x="61" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="middle">JavaScript</text>
 
       <!-- Stars and updated -->
-      <text x="114" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">★ 0 · 2mo ago</text>
+      <text x="114" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">★ 0 · 7d ago</text>
 
       <!-- Donut activity ring -->
       <g transform="translate(316, 62)">
@@ -159,9 +159,9 @@
         <circle cx="0" cy="0" r="22" fill="none" stroke="#38bdf8" stroke-width="4.5"
           stroke-linecap="round"
           stroke-dasharray="138.23007675795088"
-          stroke-dashoffset="56.67433147075987"
+          stroke-dashoffset="23.499113048851655"
           transform="rotate(-90)"/>
-        <text x="0" y="3.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">59%</text>
+        <text x="0" y="3.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">83%</text>
       </g>
     </g>
     <g class="repo-card" transform="translate(438, 228)">
@@ -169,20 +169,20 @@
       
       <!-- Mini path & status dot -->
       <circle cx="18" cy="22" r="3.5" fill="#10b981"/>
-      <text x="28" y="25.5" font-family="ui-monospace, monospace" font-size="11" fill="#64748b">Learnerbypassion/backend_While_Learning</text>
+      <text x="28" y="25.5" font-family="ui-monospace, monospace" font-size="11" fill="#64748b">Learnerbypassion/image-management-app</text>
 
       <!-- Repo title with terminal cursor -->
-      <text x="18" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" fill="#ffffff">backend_While_Learning<tspan fill="#38bdf8"> _</tspan></text>
+      <text x="18" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" fill="#ffffff">image-management-app<tspan fill="#38bdf8"> _</tspan></text>
 
       <!-- Description -->
-      <text x="18" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">A public repository on GitHub.</text>
+      <text x="18" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">Full-stack image storage, optimization &amp; ga…</text>
 
       <!-- Language pill -->
       <rect x="18" y="91" width="86" height="19" rx="4" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.28)" stroke-width="0.8"/>
       <text x="61" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="middle">JavaScript</text>
 
       <!-- Stars and updated -->
-      <text x="114" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">★ 0 · 8mo ago</text>
+      <text x="114" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">★ 0 · 18d ago</text>
 
       <!-- Donut activity ring -->
       <g transform="translate(316, 62)">
@@ -190,9 +190,9 @@
         <circle cx="0" cy="0" r="22" fill="none" stroke="#10b981" stroke-width="4.5"
           stroke-linecap="round"
           stroke-dasharray="138.23007675795088"
-          stroke-dashoffset="11.058406140636066"
+          stroke-dashoffset="1.3823007675795225"
           transform="rotate(-90)"/>
-        <text x="0" y="3.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">92%</text>
+        <text x="0" y="3.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">99%</text>
       </g>
     </g>
 </svg>
