@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="340" viewBox="0 0 850 340" role="img">
+  <title>Language Stack</title>
+  <defs>
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#10b981" stop-opacity="0.75"/>
+      <stop offset="70%" stop-color="#8b5cf6" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.8"/>
+    </linearGradient>
+    <radialGradient id="topGlow" cx="40%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.18"/>
+      <stop offset="40%" stop-color="#10b981" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#070913" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bottomGlow" cx="60%" cy="100%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#070913" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="roamingOrb1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.32"/>
+      <stop offset="40%" stop-color="#818cf8" stop-opacity="0.18"/>
+      <stop offset="75%" stop-color="#c084fc" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#070913" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="roamingOrb2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.26"/>
+      <stop offset="45%" stop-color="#06b6d4" stop-opacity="0.14"/>
+      <stop offset="80%" stop-color="#3b82f6" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#070913" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="innerBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer background & glowing border -->
+  <rect x="1" y="1" width="848" height="338" rx="22" fill="#070913" stroke="url(#cardBorder)" stroke-width="1.5"/>
+
+  <!-- Ambient auras -->
+  <rect x="1" y="1" width="848" height="338" rx="22" fill="url(#topGlow)" pointer-events="none"/>
+  <rect x="1" y="1" width="848" height="338" rx="22" fill="url(#bottomGlow)" pointer-events="none"/>
+
+  <!-- Animated roaming glowing orbs -->
+  <circle cx="200" cy="90" r="140" fill="url(#roamingOrb1)" pointer-events="none">
+    <animate attributeName="cx" values="180;680;420;180" dur="16s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="90;130;250;90" dur="16s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="640" cy="230" r="130" fill="url(#roamingOrb2)" pointer-events="none">
+    <animate attributeName="cx" values="640;220;520;640" dur="20s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="230;250;90;230" dur="20s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Radar signal rings in top right -->
+  <g stroke="#10b981" fill="none" stroke-width="1.2" pointer-events="none">
+    <circle cx="735" cy="112" r="38" stroke-opacity="0.07"/>
+    <circle cx="735" cy="112" r="70" stroke-opacity="0.059500000000000004"/>
+    <circle cx="735" cy="112" r="102" stroke-opacity="0.049"/>
+    <circle cx="735" cy="112" r="134" stroke-opacity="0.035"/>
+  </g>
+
+  <!-- Inner container box -->
+  <rect x="34" y="28" width="782" height="264" rx="16" fill="rgba(8, 12, 20, 0.65)" stroke="url(#innerBorder)" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <text x="60" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="800" fill="#ffffff" letter-spacing="-0.4">Language Stack</text>
+  <text x="60" y="93" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#94a3b8" letter-spacing="0.2">Repository-weighted technologies</text>
+
+  <!-- Terminal scanner status -->
+  <text x="780" y="66" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="600" fill="#38bdf8" text-anchor="end">&gt; stack.scan <tspan fill="#38bdf8">_</tspan></text>
+
+  <!-- Language Progress Bars -->
+  
+    <g class="lang-row" transform="translate(0, 0)">
+      <!-- Dot indicator -->
+      <circle cx="70" cy="128" r="5" fill="#f1e05a"/>
+
+      <!-- Language name -->
+      <text x="90" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#ffffff">JavaScript</text>
+
+      <!-- Percentage value -->
+      <text x="290" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#f1e05a" text-anchor="end">70%</text>
+
+      <!-- Horizontal progress bar track -->
+      <rect x="330" y="121" width="440" height="10" rx="5" fill="#152033"/>
+
+      <!-- Progress bar fill -->
+      <rect x="330" y="121" width="308" height="10" rx="5" fill="#f1e05a"/>
+    </g>
+    <g class="lang-row" transform="translate(0, 0)">
+      <!-- Dot indicator -->
+      <circle cx="70" cy="164" r="5" fill="#e34c26"/>
+
+      <!-- Language name -->
+      <text x="90" y="168" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#ffffff">HTML</text>
+
+      <!-- Percentage value -->
+      <text x="290" y="168" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#e34c26" text-anchor="end">12%</text>
+
+      <!-- Horizontal progress bar track -->
+      <rect x="330" y="157" width="440" height="10" rx="5" fill="#152033"/>
+
+      <!-- Progress bar fill -->
+      <rect x="330" y="157" width="53" height="10" rx="5" fill="#e34c26"/>
+    </g>
+    <g class="lang-row" transform="translate(0, 0)">
+      <!-- Dot indicator -->
+      <circle cx="70" cy="200" r="5" fill="#3178c6"/>
+
+      <!-- Language name -->
+      <text x="90" y="204" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#ffffff">TypeScript</text>
+
+      <!-- Percentage value -->
+      <text x="290" y="204" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#3178c6" text-anchor="end">6%</text>
+
+      <!-- Horizontal progress bar track -->
+      <rect x="330" y="193" width="440" height="10" rx="5" fill="#152033"/>
+
+      <!-- Progress bar fill -->
+      <rect x="330" y="193" width="26" height="10" rx="5" fill="#3178c6"/>
+    </g>
+    <g class="lang-row" transform="translate(0, 0)">
+      <!-- Dot indicator -->
+      <circle cx="70" cy="236" r="5" fill="#a855f7"/>
+
+      <!-- Language name -->
+      <text x="90" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#ffffff">CSS</text>
+
+      <!-- Percentage value -->
+      <text x="290" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#a855f7" text-anchor="end">6%</text>
+
+      <!-- Horizontal progress bar track -->
+      <rect x="330" y="229" width="440" height="10" rx="5" fill="#152033"/>
+
+      <!-- Progress bar fill -->
+      <rect x="330" y="229" width="26" height="10" rx="5" fill="#a855f7"/>
+    </g>
+</svg>

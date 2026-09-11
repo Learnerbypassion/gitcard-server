@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="400" viewBox="0 0 850 400" role="img">
+  <title>Selected Work</title>
+  <defs>
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#10b981" stop-opacity="0.75"/>
+      <stop offset="70%" stop-color="#8b5cf6" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.8"/>
+    </linearGradient>
+    <radialGradient id="topGlow" cx="40%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.18"/>
+      <stop offset="40%" stop-color="#10b981" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#070913" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bottomGlow" cx="60%" cy="100%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#070913" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="roamingOrb1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.32"/>
+      <stop offset="40%" stop-color="#818cf8" stop-opacity="0.18"/>
+      <stop offset="75%" stop-color="#c084fc" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#070913" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="roamingOrb2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.26"/>
+      <stop offset="45%" stop-color="#06b6d4" stop-opacity="0.14"/>
+      <stop offset="80%" stop-color="#3b82f6" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#070913" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="innerBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer background & glowing border -->
+  <rect x="1" y="1" width="848" height="398" rx="22" fill="#070913" stroke="url(#cardBorder)" stroke-width="1.5"/>
+
+  <!-- Ambient auras -->
+  <rect x="1" y="1" width="848" height="398" rx="22" fill="url(#topGlow)" pointer-events="none"/>
+  <rect x="1" y="1" width="848" height="398" rx="22" fill="url(#bottomGlow)" pointer-events="none"/>
+
+  <!-- Animated roaming glowing orbs -->
+  <circle cx="200" cy="110" r="140" fill="url(#roamingOrb1)" pointer-events="none">
+    <animate attributeName="cx" values="180;680;420;180" dur="18s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="100;160;280;100" dur="18s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="640" cy="280" r="130" fill="url(#roamingOrb2)" pointer-events="none">
+    <animate attributeName="cx" values="640;220;520;640" dur="22s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="280;300;110;280" dur="22s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Radar signal rings in top right -->
+  <g stroke="#10b981" fill="none" stroke-width="1.2" pointer-events="none">
+    <circle cx="735" cy="112" r="38" stroke-opacity="0.07"/>
+    <circle cx="735" cy="112" r="70" stroke-opacity="0.059500000000000004"/>
+    <circle cx="735" cy="112" r="102" stroke-opacity="0.049"/>
+    <circle cx="735" cy="112" r="134" stroke-opacity="0.035"/>
+  </g>
+
+  <!-- Inner container box -->
+  <rect x="34" y="28" width="782" height="344" rx="16" fill="rgba(8, 12, 20, 0.65)" stroke="url(#innerBorder)" stroke-width="1.2"/>
+
+  <!-- Terminal Header -->
+  <text x="56" y="56" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="1">PROJECTS.LIST</text>
+  <text x="175" y="56" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#64748b">./projects.sh --all</text>
+  <text x="794" y="56" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#64748b" text-anchor="end">4 pinned</text>
+  <line x1="56" y1="70" x2="794" y2="70" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- 2x2 Project Cards -->
+  
+    <g class="repo-card" transform="translate(54, 88)">
+      <rect width="358" height="124" rx="12" fill="#090e18" stroke="rgba(56, 189, 248, 0.22)" stroke-width="1.2"/>
+      
+      <!-- Mini path & status dot -->
+      <circle cx="18" cy="22" r="3.5" fill="#10b981"/>
+      <text x="28" y="25.5" font-family="ui-monospace, monospace" font-size="11" fill="#64748b">Learnerbypassion/Legal-Guardian</text>
+
+      <!-- Repo title with terminal cursor -->
+      <text x="18" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Legal-Guardian<tspan fill="#38bdf8"> _</tspan></text>
+
+      <!-- Description -->
+      <text x="18" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">https://legal-guardian.netlify.app</text>
+
+      <!-- Language pill -->
+      <rect x="18" y="91" width="86" height="19" rx="4" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.28)" stroke-width="0.8"/>
+      <text x="61" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="middle">JavaScript</text>
+
+      <!-- Stars and updated -->
+      <text x="114" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">★ 4 · 1mo ago</text>
+
+      <!-- Donut activity ring -->
+      <g transform="translate(316, 62)">
+        <circle cx="0" cy="0" r="22" fill="none" stroke="#1e293b" stroke-width="4.5"/>
+        <circle cx="0" cy="0" r="22" fill="none" stroke="#f97316" stroke-width="4.5"
+          stroke-linecap="round"
+          stroke-dasharray="138.23007675795088"
+          stroke-dashoffset="5.529203070318033"
+          transform="rotate(-90)"/>
+        <text x="0" y="3.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">96%</text>
+      </g>
+    </g>
+    <g class="repo-card" transform="translate(438, 88)">
+      <rect width="358" height="124" rx="12" fill="#090e18" stroke="rgba(56, 189, 248, 0.22)" stroke-width="1.2"/>
+      
+      <!-- Mini path & status dot -->
+      <circle cx="18" cy="22" r="3.5" fill="#10b981"/>
+      <text x="28" y="25.5" font-family="ui-monospace, monospace" font-size="11" fill="#64748b">Learnerbypassion/Employee-Management-System</text>
+
+      <!-- Repo title with terminal cursor -->
+      <text x="18" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Employee-Management-System<tspan fill="#38bdf8"> _</tspan></text>
+
+      <!-- Description -->
+      <text x="18" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">This is a practice project. I made this while l…</text>
+
+      <!-- Language pill -->
+      <rect x="18" y="91" width="86" height="19" rx="4" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.28)" stroke-width="0.8"/>
+      <text x="61" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="middle">JavaScript</text>
+
+      <!-- Stars and updated -->
+      <text x="114" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">★ 3 · 5mo ago</text>
+
+      <!-- Donut activity ring -->
+      <g transform="translate(316, 62)">
+        <circle cx="0" cy="0" r="22" fill="none" stroke="#1e293b" stroke-width="4.5"/>
+        <circle cx="0" cy="0" r="22" fill="none" stroke="#a855f7" stroke-width="4.5"
+          stroke-linecap="round"
+          stroke-dasharray="138.23007675795088"
+          stroke-dashoffset="31.792917654328704"
+          transform="rotate(-90)"/>
+        <text x="0" y="3.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">77%</text>
+      </g>
+    </g>
+    <g class="repo-card" transform="translate(54, 228)">
+      <rect width="358" height="124" rx="12" fill="#090e18" stroke="rgba(56, 189, 248, 0.22)" stroke-width="1.2"/>
+      
+      <!-- Mini path & status dot -->
+      <circle cx="18" cy="22" r="3.5" fill="#10b981"/>
+      <text x="28" y="25.5" font-family="ui-monospace, monospace" font-size="11" fill="#64748b">Learnerbypassion/ai-interview</text>
+
+      <!-- Repo title with terminal cursor -->
+      <text x="18" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" fill="#ffffff">ai-interview<tspan fill="#38bdf8"> _</tspan></text>
+
+      <!-- Description -->
+      <text x="18" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">A public repository on GitHub.</text>
+
+      <!-- Language pill -->
+      <rect x="18" y="91" width="86" height="19" rx="4" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.28)" stroke-width="0.8"/>
+      <text x="61" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="middle">JavaScript</text>
+
+      <!-- Stars and updated -->
+      <text x="114" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">★ 0 · 2mo ago</text>
+
+      <!-- Donut activity ring -->
+      <g transform="translate(316, 62)">
+        <circle cx="0" cy="0" r="22" fill="none" stroke="#1e293b" stroke-width="4.5"/>
+        <circle cx="0" cy="0" r="22" fill="none" stroke="#38bdf8" stroke-width="4.5"
+          stroke-linecap="round"
+          stroke-dasharray="138.23007675795088"
+          stroke-dashoffset="56.67433147075987"
+          transform="rotate(-90)"/>
+        <text x="0" y="3.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">59%</text>
+      </g>
+    </g>
+    <g class="repo-card" transform="translate(438, 228)">
+      <rect width="358" height="124" rx="12" fill="#090e18" stroke="rgba(56, 189, 248, 0.22)" stroke-width="1.2"/>
+      
+      <!-- Mini path & status dot -->
+      <circle cx="18" cy="22" r="3.5" fill="#10b981"/>
+      <text x="28" y="25.5" font-family="ui-monospace, monospace" font-size="11" fill="#64748b">Learnerbypassion/backend_While_Learning</text>
+
+      <!-- Repo title with terminal cursor -->
+      <text x="18" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" fill="#ffffff">backend_While_Learning<tspan fill="#38bdf8"> _</tspan></text>
+
+      <!-- Description -->
+      <text x="18" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">A public repository on GitHub.</text>
+
+      <!-- Language pill -->
+      <rect x="18" y="91" width="86" height="19" rx="4" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.28)" stroke-width="0.8"/>
+      <text x="61" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="middle">JavaScript</text>
+
+      <!-- Stars and updated -->
+      <text x="114" y="104.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748b">★ 0 · 8mo ago</text>
+
+      <!-- Donut activity ring -->
+      <g transform="translate(316, 62)">
+        <circle cx="0" cy="0" r="22" fill="none" stroke="#1e293b" stroke-width="4.5"/>
+        <circle cx="0" cy="0" r="22" fill="none" stroke="#10b981" stroke-width="4.5"
+          stroke-linecap="round"
+          stroke-dasharray="138.23007675795088"
+          stroke-dashoffset="11.058406140636066"
+          transform="rotate(-90)"/>
+        <text x="0" y="3.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">92%</text>
+      </g>
+    </g>
+</svg>

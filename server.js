@@ -3,6 +3,7 @@ const express = require('express');
 const portraitRoute = require('./routes/portrait');
 const statsRoute = require('./routes/stats');
 const projectsRoute = require('./routes/projects');
+const languagesRoute = require('./routes/languages');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -21,9 +22,10 @@ app.get('/', (req, res) => {
       '  GET /api/section/portrait?username=<user>&theme=<github-dark|light|aurora|cyber>',
       '  GET /api/section/stats?username=<user>&theme=<...>',
       '  GET /api/section/projects?username=<user>&theme=<...>&repos=owner/repo,owner/repo2',
+      '  GET /api/section/languages?username=<user>&theme=<...>',
       '',
       'Embed in a README like:',
-      '  ![Portrait](https://YOUR-APP.onrender.com/api/section/portrait?username=octocat&theme=github-dark)'
+      '  ![Stats](https://YOUR-APP.onrender.com/api/section/stats?username=octocat&theme=github-dark)'
     ].join('\n')
   );
 });
@@ -31,6 +33,9 @@ app.get('/', (req, res) => {
 app.use('/api/section/portrait', portraitRoute);
 app.use('/api/section/stats', statsRoute);
 app.use('/api/section/projects', projectsRoute);
+app.use('/api/section/languages', languagesRoute);
+app.use('/api/section/toolkit', languagesRoute);
+app.use('/api/section/stack', languagesRoute);
 
 app.listen(PORT, () => {
   console.log(`gitcard-server listening on port ${PORT}`);

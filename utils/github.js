@@ -37,11 +37,15 @@ async function getAllRepos(username) {
     let page = 1;
     while (true) {
       const res = await fetch(
-        `${GH_API}/users/${username}/repos?per_page=100&page=${page}&type=owner`,
+        `${GH_API}/users/${username}/repos?per_page=100&page=${page}`,
         { headers: ghHeaders() }
       );
-      if (!res.ok) throw new Error(`GitHub repo list failed (${res.status})`);
+      if (!res.ok) {
+        if (page > 1) break;
+        throw new Error(`GitHub repo list failed (${res.status})`);
+      }
       const batch = await res.json();
+      if (!Array.isArray(batch)) break;
       repos.push(...batch);
       if (batch.length < 100) break;
       page += 1;
