@@ -5,9 +5,8 @@ const { theme, escapeXml } = require('../utils/svg');
 const router = express.Router();
 
 router.get('/', async (req, res) => {
-  const username = req.query.username;
+  const username = req.query.username || 'learnerbypassion';
   const themeName = req.query.theme || 'github-dark';
-  if (!username) return res.status(400).send('username query param is required');
 
   const t = theme(themeName);
   const role = req.query.role || 'Frontend or full-stack engineer';
@@ -17,12 +16,15 @@ router.get('/', async (req, res) => {
     let user = { name: username };
     try {
       user = await getUser(username);
-    } catch (err) {
-      console.warn('getUser failed in brief:', err.message);
-    }
+    } catch (_) {}
 
     const width = 530;
-    const height = 394; // Matches portrait height for side-by-side alignment
+    const height = 420; // Exactly matches portrait card height (420px)
+
+    const innerX = 20;
+    const innerY = 20;
+    const innerW = width - innerX * 2; // 490
+    const innerH = height - innerY * 2; // 380 -> ends at y = 400
 
     const gradStops = t.borderGradient || ['#38bdf8', '#10b981', '#8b5cf6', '#2563eb'];
     const badgeText = `RECRUITER SIGNAL BRIEF · ${username}`;
@@ -59,66 +61,67 @@ router.get('/', async (req, res) => {
   </defs>
 
   <!-- Outer background & glowing border -->
-  <rect x="1" y="1" width="${width - 2}" height="${height - 2}" rx="16" fill="${t.outerBg || '#070913'}" stroke="url(#briefBorder)" stroke-width="1.5"/>
+  <rect x="1" y="1" width="${width - 2}" height="${height - 2}" rx="18" fill="${t.outerBg || '#070913'}" stroke="url(#briefBorder)" stroke-width="1.5"/>
 
   <!-- Ambient auras -->
-  <rect x="1" y="1" width="${width - 2}" height="${height - 2}" rx="16" fill="url(#briefTopGlow)" pointer-events="none"/>
-  <rect x="1" y="1" width="${width - 2}" height="${height - 2}" rx="16" fill="url(#briefBottomGlow)" pointer-events="none"/>
+  <rect x="1" y="1" width="${width - 2}" height="${height - 2}" rx="18" fill="url(#briefTopGlow)" pointer-events="none"/>
+  <rect x="1" y="1" width="${width - 2}" height="${height - 2}" rx="18" fill="url(#briefBottomGlow)" pointer-events="none"/>
 
   <!-- Animated roaming glowing orb -->
-  <circle cx="200" cy="150" r="130" fill="url(#briefOrb)" pointer-events="none">
+  <circle cx="200" cy="180" r="140" fill="url(#briefOrb)" pointer-events="none">
     <animate attributeName="cx" values="160;380;240;160" dur="14s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="120;250;180;120" dur="14s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="140;270;180;140" dur="14s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- Inner container box -->
-  <rect x="20" y="20" width="${width - 40}" height="${height - 40}" rx="12" fill="${t.cardBg || 'rgba(8, 12, 20, 0.65)'}" stroke="url(#briefInnerBorder)" stroke-width="1.2"/>
+  <!-- Inner container box (height 380, cleanly encloses all content) -->
+  <rect x="${innerX}" y="${innerY}" width="${innerW}" height="${innerH}" rx="14" fill="${t.cardBg || 'rgba(8, 12, 20, 0.65)'}" stroke="url(#briefInnerBorder)" stroke-width="1.2"/>
 
   <!-- Beacon badge -->
-  <rect x="38" y="38" width="270" height="24" rx="6" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="0.8"/>
-  <circle cx="51" cy="50" r="3.5" fill="#10b981">
+  <rect x="42" y="44" width="270" height="24" rx="6" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="0.8"/>
+  <circle cx="55" cy="56" r="3.5" fill="#10b981">
     <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
   </circle>
-  <text x="62" y="54" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" font-weight="700" fill="#38bdf8" letter-spacing="0.5">${escapeXml(badgeText)}</text>
+  <text x="66" y="60" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" font-weight="700" fill="#38bdf8" letter-spacing="0.5">${escapeXml(badgeText)}</text>
 
   <!-- Name -->
-  <text x="38" y="104" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="30" font-weight="800" fill="${t.titleText || '#ffffff'}" letter-spacing="-0.5">${escapeXml(user.name || username)}</text>
+  <text x="42" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="30" font-weight="800" fill="${t.titleText || '#ffffff'}" letter-spacing="-0.5">${escapeXml(user.name || username)}</text>
 
   <!-- Role -->
-  <text x="38" y="138" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" fill="#38bdf8">${escapeXml(role)}</text>
+  <text x="42" y="138" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" fill="#38bdf8">${escapeXml(role)}</text>
 
   <!-- Motto / description -->
-  <text x="38" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="500" fill="${t.subtext || '#94a3b8'}">${escapeXml(motto)}</text>
+  <text x="42" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="${t.subtext || '#94a3b8'}">${escapeXml(motto)}</text>
 
   <!-- Status pill with pulsing dot -->
-  <rect x="38" y="206" width="260" height="30" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
-  <circle cx="54" cy="221" r="4" fill="#22c55e">
+  <rect x="42" y="200" width="260" height="30" rx="8" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="58" cy="215" r="4" fill="#22c55e">
     <animate attributeName="r" values="3.5;4.5;3.5" dur="2s" repeatCount="indefinite"/>
   </circle>
-  <text x="66" y="225" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">Building and sharing work in public</text>
+  <text x="70" y="219" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">Building and sharing work in public</text>
 
   <!-- Divider line -->
-  <line x1="38" y1="260" x2="${width - 38}" y2="260" stroke="#1e293b" stroke-width="1"/>
+  <line x1="42" y1="248" x2="${width - 42}" y2="248" stroke="#1e293b" stroke-width="1"/>
 
-  <!-- Tech tags & GitHub link chips -->
-  <g transform="translate(38, 278)">
-    <rect x="0" y="0" width="82" height="24" rx="6" fill="rgba(56, 189, 248, 0.1)" stroke="rgba(56, 189, 248, 0.25)" stroke-width="0.8"/>
-    <text x="41" y="16" font-family="sans-serif" font-size="11" font-weight="600" fill="#38bdf8" text-anchor="middle">JavaScript</text>
+  <!-- Tech tags -->
+  <g transform="translate(42, 264)">
+    <rect x="0" y="0" width="80" height="24" rx="6" fill="rgba(56, 189, 248, 0.1)" stroke="rgba(56, 189, 248, 0.25)" stroke-width="0.8"/>
+    <text x="40" y="16" font-family="sans-serif" font-size="11" font-weight="600" fill="#38bdf8" text-anchor="middle">JavaScript</text>
 
-    <rect x="90" y="0" width="58" height="24" rx="6" fill="rgba(45, 212, 191, 0.1)" stroke="rgba(45, 212, 191, 0.25)" stroke-width="0.8"/>
-    <text x="119" y="16" font-family="sans-serif" font-size="11" font-weight="600" fill="#2dd4bf" text-anchor="middle">React</text>
+    <rect x="88" y="0" width="56" height="24" rx="6" fill="rgba(45, 212, 191, 0.1)" stroke="rgba(45, 212, 191, 0.25)" stroke-width="0.8"/>
+    <text x="116" y="16" font-family="sans-serif" font-size="11" font-weight="600" fill="#2dd4bf" text-anchor="middle">React</text>
 
-    <rect x="156" y="0" width="76" height="24" rx="6" fill="rgba(192, 132, 252, 0.1)" stroke="rgba(192, 132, 252, 0.25)" stroke-width="0.8"/>
-    <text x="194" y="16" font-family="sans-serif" font-size="11" font-weight="600" fill="#c084fc" text-anchor="middle">HTML / CSS</text>
+    <rect x="152" y="0" width="76" height="24" rx="6" fill="rgba(192, 132, 252, 0.1)" stroke="rgba(192, 132, 252, 0.25)" stroke-width="0.8"/>
+    <text x="190" y="16" font-family="sans-serif" font-size="11" font-weight="600" fill="#c084fc" text-anchor="middle">HTML / CSS</text>
 
-    <rect x="240" y="0" width="68" height="24" rx="6" fill="rgba(74, 222, 128, 0.1)" stroke="rgba(74, 222, 128, 0.25)" stroke-width="0.8"/>
-    <text x="274" y="16" font-family="sans-serif" font-size="11" font-weight="600" fill="#4ade80" text-anchor="middle">Node.js</text>
+    <rect x="236" y="0" width="66" height="24" rx="6" fill="rgba(74, 222, 128, 0.1)" stroke="rgba(74, 222, 128, 0.25)" stroke-width="0.8"/>
+    <text x="269" y="16" font-family="sans-serif" font-size="11" font-weight="600" fill="#4ade80" text-anchor="middle">Node.js</text>
   </g>
 
-  <!-- GitHub profile link button -->
-  <g transform="translate(38, 316)">
-    <rect x="0" y="0" width="130" height="28" rx="7" fill="#1e293b" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1"/>
-    <text x="65" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#38bdf8" text-anchor="middle">github.com/${escapeXml(username)}</text>
+  <!-- GitHub profile link button (Comfortably placed inside the inner box) -->
+  <g transform="translate(42, 304)">
+    <rect x="0" y="0" width="220" height="30" rx="8" fill="#0b1120" stroke="rgba(56, 189, 248, 0.35)" stroke-width="1"/>
+    <circle cx="16" cy="15" r="3.5" fill="#38bdf8"/>
+    <text x="28" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#38bdf8">github.com/${escapeXml(username)}</text>
   </g>
 </svg>`;
 
