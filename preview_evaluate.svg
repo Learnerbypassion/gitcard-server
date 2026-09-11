@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="180" viewBox="0 0 850 180" role="img">
+  <title>What teams can evaluate quickly</title>
+  <defs>
+    <linearGradient id="evalBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#10b981" stop-opacity="0.75"/>
+      <stop offset="70%" stop-color="#8b5cf6" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.8"/>
+    </linearGradient>
+    <radialGradient id="evalTopGlow" cx="30%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.18"/>
+      <stop offset="50%" stop-color="#10b981" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#070913" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="evalBottomGlow" cx="70%" cy="100%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#070913" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="evalOrb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25"/>
+      <stop offset="45%" stop-color="#818cf8" stop-opacity="0.14"/>
+      <stop offset="80%" stop-color="#c084fc" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#070913" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="evalInnerBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer background & glowing border -->
+  <rect x="1" y="1" width="848" height="178" rx="20" fill="#070913" stroke="url(#evalBorder)" stroke-width="1.5"/>
+
+  <!-- Ambient auras -->
+  <rect x="1" y="1" width="848" height="178" rx="20" fill="url(#evalTopGlow)" pointer-events="none"/>
+  <rect x="1" y="1" width="848" height="178" rx="20" fill="url(#evalBottomGlow)" pointer-events="none"/>
+
+  <!-- Animated roaming glowing orb -->
+  <circle cx="300" cy="90" r="130" fill="url(#evalOrb)" pointer-events="none">
+    <animate attributeName="cx" values="220;600;380;220" dur="14s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="70;110;80;70" dur="14s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Inner container box -->
+  <rect x="34" y="22" width="782" height="136" rx="14" fill="rgba(8, 12, 20, 0.65)" stroke="url(#evalInnerBorder)" stroke-width="1.2"/>
+
+  <!-- 3 Evaluator Columns -->
+  
+    <g class="eval-col" transform="translate(52, 36)">
+      <rect width="236" height="108" rx="12" fill="#090e18" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.2"/>
+      <text x="18" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#38bdf8">Role fit</text>
+      <text x="18" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Frontend or full-stack engineer</text>
+      <text x="18" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="500" fill="#94a3b8">JavaScript · HTML · CSS</text>
+      
+      <!-- Colored indicator bar at bottom -->
+      <rect x="18" y="93" width="200" height="4" rx="2" fill="#1b2438"/>
+      <rect x="18" y="93" width="140" height="4" rx="2" fill="#38bdf8"/>
+    </g>
+    <g class="eval-col" transform="translate(305, 36)">
+      <rect width="236" height="108" rx="12" fill="#090e18" stroke="rgba(45, 212, 191, 0.3)" stroke-width="1.2"/>
+      <text x="18" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#2dd4bf">Public proof</text>
+      <text x="18" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#ffffff">37 repositories</text>
+      <text x="18" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="500" fill="#94a3b8">★ 7 stars earned</text>
+      
+      <!-- Colored indicator bar at bottom -->
+      <rect x="18" y="93" width="200" height="4" rx="2" fill="#1b2438"/>
+      <rect x="18" y="93" width="140" height="4" rx="2" fill="#2dd4bf"/>
+    </g>
+    <g class="eval-col" transform="translate(558, 36)">
+      <rect width="236" height="108" rx="12" fill="#090e18" stroke="rgba(192, 132, 252, 0.3)" stroke-width="1.2"/>
+      <text x="18" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#c084fc">Momentum</text>
+      <text x="18" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#ffffff">425 contributions</text>
+      <text x="18" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="500" fill="#94a3b8">⚡ 130 active days</text>
+      
+      <!-- Colored indicator bar at bottom -->
+      <rect x="18" y="93" width="200" height="4" rx="2" fill="#1b2438"/>
+      <rect x="18" y="93" width="140" height="4" rx="2" fill="#c084fc"/>
+    </g>
+</svg>

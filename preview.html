@@ -46,11 +46,16 @@
       margin-left: 10px;
     }
     .card-wrap {
-      border-radius: 22px;
+      border-radius: 20px;
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
       background: #070913;
       overflow: hidden;
       display: flex;
+    }
+    .side-by-side {
+      display: flex;
+      gap: 20px;
+      align-items: center;
     }
     img {
       display: block;
@@ -62,39 +67,51 @@
 <body>
   <div class="header">
     <h1>Learnerbypassion Live GitHub Suite</h1>
-    <p>All-in-one glowing hero banner, animated CRT portrait, profile signal, selected work &amp; technical toolkit</p>
+    <p>All-in-one glowing cards with roaming orbs, CRT scanlines, and animated status beacons</p>
   </div>
 
   <div class="card-section">
-    <div class="card-title">Option A: Unified Animated Hero Card (Replaces the clunky HTML table)</div>
-    <div class="card-wrap">
-      <img src="preview_hero.svg" width="850" height="360" alt="Hero Brief" />
+    <div class="card-title">Marked Area 1 (Side-by-Side): Recruiter Brief + Animated Portrait</div>
+    <div class="side-by-side">
+      <div class="card-wrap">
+        <img src="preview_brief.svg" width="530" height="394" alt="Recruiter Brief" />
+      </div>
+      <div class="card-wrap">
+        <img src="preview_portrait.svg" width="364" height="394" alt="Animated Portrait" />
+      </div>
     </div>
   </div>
 
   <div class="card-section">
-    <div class="card-title">Option B: Standalone Animated Portrait Terminal (If using table)</div>
+    <div class="card-title">Alternative Area 1: Unified All-in-One Hero Card</div>
     <div class="card-wrap">
-      <img src="preview_portrait.svg" width="364" height="394" alt="Animated Portrait" />
+      <img src="preview_hero.svg" width="850" height="360" alt="Hero Card" />
     </div>
   </div>
 
   <div class="card-section">
-    <div class="card-title">1. Profile Signal (Live Metrics)</div>
+    <div class="card-title">Marked Area 2: What Teams Can Evaluate Quickly</div>
+    <div class="card-wrap">
+      <img src="preview_evaluate.svg" width="850" height="180" alt="What Teams Can Evaluate Quickly" />
+    </div>
+  </div>
+
+  <div class="card-section">
+    <div class="card-title">Proof at a glance (Profile Signal)</div>
     <div class="card-wrap">
       <img src="preview.svg" width="850" height="340" alt="Profile Signal" />
     </div>
   </div>
 
   <div class="card-section">
-    <div class="card-title">2. Selected Work (Projects Terminal)</div>
+    <div class="card-title">Selected Work (Projects Terminal)</div>
     <div class="card-wrap">
       <img src="preview_projects.svg" width="850" height="400" alt="Selected Work" />
     </div>
   </div>
 
   <div class="card-section">
-    <div class="card-title">3. Technical Toolkit (Language Stack)</div>
+    <div class="card-title">Technical Toolkit (Language Stack)</div>
     <div class="card-wrap">
       <img src="preview_languages.svg" width="850" height="340" alt="Language Stack" />
     </div>
