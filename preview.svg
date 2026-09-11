@@ -79,16 +79,16 @@
     <g class="stat-tile" transform="translate(0, 0)">
       <rect x="244" y="118" width="174" height="152" rx="14" fill="#090e18" stroke="rgba(45, 212, 191, 0.35)" stroke-width="1.2"/>
       <text x="264" y="148" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#94a3b8">Contributions</text>
-      <text x="264" y="194" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#2dd4bf" letter-spacing="-0.5">421</text>
+      <text x="264" y="194" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#2dd4bf" letter-spacing="-0.5">435</text>
       <rect x="264" y="232" width="134" height="6" rx="3" fill="#152033"/>
       <rect x="264" y="232" width="23" height="6" rx="3" fill="#2dd4bf"/>
     </g>
     <g class="stat-tile" transform="translate(0, 0)">
       <rect x="432" y="118" width="174" height="152" rx="14" fill="#090e18" stroke="rgba(192, 132, 252, 0.35)" stroke-width="1.2"/>
       <text x="452" y="148" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#94a3b8">Repos</text>
-      <text x="452" y="194" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#c084fc" letter-spacing="-0.5">37</text>
+      <text x="452" y="194" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#c084fc" letter-spacing="-0.5">41</text>
       <rect x="452" y="232" width="134" height="6" rx="3" fill="#152033"/>
-      <rect x="452" y="232" width="99" height="6" rx="3" fill="#c084fc"/>
+      <rect x="452" y="232" width="110" height="6" rx="3" fill="#c084fc"/>
     </g>
     <g class="stat-tile" transform="translate(0, 0)">
       <rect x="620" y="118" width="174" height="152" rx="14" fill="#090e18" stroke="rgba(74, 222, 128, 0.35)" stroke-width="1.2"/>

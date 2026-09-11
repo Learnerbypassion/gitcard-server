@@ -60,7 +60,7 @@
     <g class="eval-col" transform="translate(305, 36)">
       <rect width="236" height="108" rx="12" fill="#090e18" stroke="rgba(45, 212, 191, 0.3)" stroke-width="1.2"/>
       <text x="18" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#2dd4bf">Public proof</text>
-      <text x="18" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#ffffff">37 repositories</text>
+      <text x="18" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#ffffff">41 repositories</text>
       <text x="18" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="500" fill="#94a3b8">★ 7 stars earned</text>
       
       <!-- Colored indicator bar at bottom -->
@@ -70,7 +70,7 @@
     <g class="eval-col" transform="translate(558, 36)">
       <rect width="236" height="108" rx="12" fill="#090e18" stroke="rgba(192, 132, 252, 0.3)" stroke-width="1.2"/>
       <text x="18" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#c084fc">Momentum</text>
-      <text x="18" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#ffffff">425 contributions</text>
+      <text x="18" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#ffffff">435 contributions</text>
       <text x="18" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="500" fill="#94a3b8">⚡ 130 active days</text>
       
       <!-- Colored indicator bar at bottom -->
