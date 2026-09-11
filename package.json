@@ -1,0 +1,17 @@
+{
+  "name": "gitcard-server",
+  "version": "1.0.0",
+  "description": "Self-hosted GitHub profile card API (portrait, stats, projects) - a GitSkins-style service you own",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "jimp": "^0.22.12"
+  }
+}
